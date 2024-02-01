@@ -6,17 +6,16 @@
     padding: 0px;
 }
 
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 header {
     position: relative;
-    left: -20px;
-    width: 100vw;
+    left: -55px;
     margin-top: 20px;
     margin-bottom: 80px;
 }
@@ -26,6 +25,11 @@ main {
     flex-direction: column;
     margin: auto;
     width: 90%;
+}
+
+#main_interacao {
+    display: flex;
+    flex-direction: column;
 }
 
 #itexto {
@@ -38,6 +42,10 @@ main {
     font-family: "Inter", sans-serif;
     font-size: 2rem;
     color: #0A3871;
+}
+
+#main-imagem {
+    vertical-align: middle;
 }
 
 .main_texto {
@@ -88,7 +96,7 @@ section {
     justify-content: center;
     text-align: center;
     margin: auto;
-    
+    margin-bottom: 50px;
     width: 90%;
     height: 186px;
     border-radius: 26px;
@@ -96,4 +104,70 @@ section {
     gap: 32px;
 }
 
+#section_imagem {
+    display: none;
+}
 
+
+
+@media (min-width: 776px) {
+    
+    #botoes {
+        flex-direction: row;
+    
+    }
+
+    #botao-1 {
+        width: 50%;
+    }
+
+    #botao-2 {
+        width: 50%;
+    }
+
+    #section_imagem {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        flex-direction: row;
+        margin: 0px 50px;
+        height: 100%;
+        gap: 50px;
+        
+    }
+
+    header {
+        position: relative;
+        left: -80px;
+    }
+
+    main {
+        flex-direction: column;
+        margin: 0px;
+        width: 70%;
+    }
+
+    #itexto {
+        padding-bottom: 80px;
+    }
+
+    #botoes {
+        height: 70px;
+        margin-bottom: 0px;
+    }
+
+    section {
+        margin: 10px 0px;
+        height: 680px;
+        width: 30%;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    #section_imagem {
+        display: block;
+    }
+}
