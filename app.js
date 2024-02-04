@@ -7,6 +7,7 @@ function criptografar() {
     let tituloDaResposta = document.getElementById('h2')
     let resposta = document.getElementById('resposta')
     let botaoCopiar = document.getElementById('botao-3')
+    let imagem = document.getElementById('section_imagem')
     let novaFrase = ''
 
     if (texto == 0) {
@@ -31,6 +32,7 @@ function criptografar() {
         tituloDaResposta.innerHTML = 'Mensagem criptografada'
         resposta.style.fontSize = '2rem'
         botaoCopiar.style.display = 'block'
+        imagem.style.display = 'none'
     }
         
 }
@@ -40,6 +42,7 @@ function descriptografar() {
     let texto = String(textarea.value)
     let tituloDaResposta = document.getElementById('h2')
     let botaoCopiar = document.getElementById('botao-3')
+    let imagem = document.getElementById('section_imagem')
     let resposta = document.getElementById('resposta')
     
 
@@ -56,6 +59,7 @@ function descriptografar() {
         resposta.innerText = texto
         resposta.style.fontSize = '2rem'
         botaoCopiar.style.display = 'block'
+        imagem.style.display = 'none'
         
         }
     }
