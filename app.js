@@ -10,7 +10,7 @@ function criptografar() {
     let novaFrase = ''
 
     if (texto == 0) {
-        window.alert('Erro')
+        window.alert('Erro, digite algum texto ou frase.')
     } else {
         for (let i = 0;i < texto.length;i++) {
             if (texto[i] === 'a') {

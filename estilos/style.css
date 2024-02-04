@@ -44,7 +44,7 @@ main {
     color: #0A3871;
 }
 
-#main-imagem {
+#imagem {
     vertical-align: middle;
 }
 
@@ -109,15 +109,20 @@ main {
 section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    overflow: hidden;
     text-align: center;
     margin: auto;
     margin-bottom: 50px;
+    padding: 20px;
     width: 90%;
-    height: 186px;
+    height: auto;
     border-radius: 26px;
     box-shadow: 3px 9px 16px rgba(0, 0, 0, 0.347);
     gap: 32px;
+}
+
+#resposta {
+    word-break: break-word;
 }
 
 #section_imagem {
