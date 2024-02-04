@@ -79,6 +79,7 @@ main {
     padding: 24px;
     border: 1px solid rgba(10, 56, 113, 1);
     color: #fff;
+    cursor: pointer;
 }
 
 #botao-2 {
@@ -88,6 +89,21 @@ main {
     padding: 24px;
     border: 1px solid rgba(10, 56, 113, 1);
     color: rgba(10, 56, 113, 1);
+    cursor: pointer;
+}
+
+#botao-3 {
+    background-color: #fff;
+    display: none;
+    width: 50%;
+    height: 67px;
+    border-radius: 24px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 24px;
+    border: 1px solid rgba(10, 56, 113, 1);
+    color: rgba(10, 56, 113, 1);
+    cursor: pointer;
 }
 
 section {
@@ -157,6 +173,7 @@ section {
     #botoes {
         height: 70px;
         margin-bottom: 0px;
+        
     }
 
     section {

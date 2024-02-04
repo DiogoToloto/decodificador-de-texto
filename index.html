@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <script src="app.js"></script>
     <title>Decodificador</title>
 </head>
 <body>
@@ -16,15 +17,16 @@
             <textarea name="" id="itexto" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
             <p class="main_texto"><img id="imagem" src="assets/Vector.png" alt="">Apenas letras minúsculas e sem acento.</p>
             <div id="botoes">
-                <input type="submit" name="" id="botao-1" value="Criptografar">
-                <input type="submit" name="" id="botao-2" value="Descriptografar">
+                <input type="button" name="" id="botao-1" value="Criptografar" onclick="criptografar()">
+                <input type="button" name="" id="botao-2" value="Descriptografar" onclick="descriptografar()">
             </div>
         </div>
     </main>
     <section>
         <img id="section_imagem" src="assets/High quality products 1 1.svg" alt="">
-        <h2>Nenhuma mensagem encontrada</h2>
-        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <h2 id="h2" >Nenhuma mensagem encontrada</h2>
+        <p id="resposta" >Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <input type="button" name="" id="botao-3" value="Copiar" onclick="copiar()">
     </section>
 </body>
 </html>
